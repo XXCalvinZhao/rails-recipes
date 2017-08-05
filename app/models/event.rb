@@ -20,4 +20,6 @@ class Event < ApplicationRecord
  STATUS = ["draft", "public", "private"]
  validates_inclusion_of :status, :in => STATUS
 
+ belongs_to :catagory, :optional => true
+
 end
